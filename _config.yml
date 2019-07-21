@@ -4,7 +4,7 @@ subtitle: Resolvendo problemas do mundo real
 description: 
   Canal DevOps é um blog que tem como objetivo difundir o conhecimento, técnicas e boas práticas. Focando em problemas do mundo real.
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/canaldevops-preview" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 logo_file: logo.png  # your profile image 
