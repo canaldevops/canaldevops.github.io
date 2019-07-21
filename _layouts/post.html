@@ -11,7 +11,7 @@ layout: default
 			<article class="card" itemscope itemtype="http://schema.org/BlogPosting">
 				<div class="card-header">
 					<h2 class="post-meta">{{ page.title }}</h2>
-					<p class="post-summary">Publicado por : <img src="/assets/img/author/{{ author.profilephoto }}" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">{{ author.name }}</span> </span> at
+					<p class="post-summary">Publicado por : <img src="/assets/img/author/{{ author.profilephoto }}" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">{{ author.name }}</span> </span> em
 						<time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%d/%m/%Y" }}</time>
 					</p>
 					<div class="post-categories"> Nível : <a href="/levels/{{ page.level }}">{{ level.key }} - {{ level.name}}</a> </div>
