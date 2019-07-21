@@ -11,7 +11,7 @@ layout: default
                 {% for author in site.authors %}
                 <br />
                 <div class="row">
-                    <div class="col-md-2"> <img src="/assets/img/author/{{ author.profilephoto }}" class="company-logo" /> </div>
+                    <div class="col-md-2"> <img src="{{ '/assets/img/author/' | append: author.profilephoto | relative_url }}" class="company-logo" /> </div>
                     <div class="col-md-6">
                         <h4 class="experience-title">{{ author.name }}</h4>
                         <p class="experience-desc">{{ author.bio }}</p>
