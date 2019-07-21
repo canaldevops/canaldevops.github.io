@@ -12,11 +12,11 @@ layout: default
                 {% for post in posts %}
                 {% assign author = site.authors | where: 'username', post.author | first %}
 
-                    <div class="card blog-post"> <img class="card-img-top" src="/assets/img/{{ post.thumbnail }}" alt="{{ post.title }}">
-                        <div class="card-body center"> <img src="/assets/img/author/{{ author.profilephoto }}" class="author-profile-img">
+                    <div class="card blog-post"> <img class="card-img-top" src="{{ '/assets/img/' | append: post.thumbnail | relative_url }}" alt="{{ post.title }}">
+                        <div class="card-body center"> <img src="{{ '/assets/img/author/' | append: author.profilephoto | relative_url }}" class="author-profile-img">
                             <h4 class="card-title">{{ post.title }}</h4>
                             <h6 class="card-subtitle mb-2 text-muted">{{ post.date }}</h6>
-                            <p class="card-text">{{ post.excerpt }}</p> <a href="{{ post.url }}" data-disqus-identifier="{{ post.url }}" class="btn btn-primary btn-lg">Ler</a> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></span> </div>
+                            <p class="card-text">{{ post.excerpt }}</p> <a href="{{ post.url | relative_url }}" data-disqus-identifier="{{ post.url }}" class="btn btn-primary btn-lg">Ler</a> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></span> </div>
                     </div>
 
                 {% endfor %}   
