@@ -18,3 +18,6 @@ collections:
 
 # social links 
 social_username: canaldevops
+
+toggles:
+  show_author_image: false
