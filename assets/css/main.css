@@ -18,6 +18,11 @@ header {
   height: 150px;
   margin-left: 20px; }
 
+.profile-img-small {
+  width: 100px;
+  height: 100px;
+}
+
 .profile-name {
   margin-top: 20px; }
 

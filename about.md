@@ -1,2 +1,4 @@
-adicionar about
-+ link para authors
+---
+title: Home
+layout: about
+---
